@@ -5,14 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-<table>
+<table style="background: yellow">
     <tr>
-        <th style="background: lightgreen; color: blue">ĐĂNG KÍ HỌC VIÊN</th>
+        <th style="background: lightgreen; color: blue" colspan="2">ĐĂNG KÍ HỌC VIÊN</th>
     </tr>
     <tr>
         <table>
             <tr>
-                <td>Họ và tên</td>
+                <td width="100px">Họ và tên</td>
                 <td><input type="text"></td>
             </tr>
         </table>
@@ -20,7 +20,7 @@
     <tr>
         <table>
             <tr>
-                <td>Ngày sinh</td>
+                <td width="100px">Ngày sinh</td>
                 <td><input type="number"></td>
             </tr>
         </table>
@@ -28,7 +28,7 @@
     <tr>
         <table>
             <tr>
-                <td>Giới tính</td>
+                <td width="100px">Giới tính</td>
                 <td><input type="radio" name="gt">Nam</td>
                 <td><input type="radio" name="gt">Nữ</td>
             </tr>
@@ -37,23 +37,27 @@
     <tr>
         <table>
             <tr>
-                <td>Địa chỉ</td>
-                <td><textarea rows="5" </td>
+                <td width="100px">Địa chỉ</td>
+                <td><textarea name="txt1" cols="30" rows="20" style="height: 70px"></textarea></td>
             </tr>
         </table>
     </tr>
     <tr>
         <table>
             <tr>
-                <td>Lớp</td>
-                <td><select </td>
+                <td width="100px">Lớp</td>
+                <td><select id="Lop" name="Lop">
+                    <option value="">- Chon-lop-</option>
+                    <option value="">a1</option>
+                    <option value="">a2</option>
+                </select> </td>
             </tr>
         </table>
     </tr>
     <tr>
         <table>
             <tr>
-                <td>Email</td>
+                <td width="100px">Email</td>
                 <td><input type="email"></td>
             </tr>
         </table>
@@ -61,7 +65,7 @@
     <tr>
         <table>
             <tr>
-                <td>Điện thoại</td>
+                <td width="100px">Điện thoại</td>
                 <td><input type="number"></td>
             </tr>
         </table>
@@ -69,8 +73,9 @@
     <tr>
         <table>
             <tr>
-                <td></td>
+                <td width="50px"></td>
                 <td><button>Đăng kí</button></td>
+                <td><button>Nhập lại</button></td>
             </tr>
         </table>
     </tr>

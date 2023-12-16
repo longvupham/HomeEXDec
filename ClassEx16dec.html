@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<input type="number" id="no1">
+<button onclick="num1()">CLick</button>
+<script>
+function num1(){
+    let a = document.getElementById('no1').value
+    console.log(a)
+}
+  </script>
+<hr>
+<h1>Bài 2</h1>
+<input type="text" id="no2">
+<input type="text" id="no3">
+<button onclick="text1()">CLick</button>
+<script>
+    function text1(){
+        let b = document.getElementById('no2').value
+        let c = document.getElementById('no3').value
+        document.write(b+c);
+        alert(b+c);
+        console.log(b+c)
+    }
+</script>
+<hr>
+<h1>Bài 3</h1>
+<button onclick="bai3()">click</button>
+<script>
+    function bai3(){
+        let a = 10;
+        let b = 5;
+        let c = 20;
+        let d = 8;
+        alert(a + b * c - d  / 2)
+        console.log(a + b * c - d  / 2)
+        document.write(a + b * c - d  / 2)
+    }
+    </script>
+<hr>
+<h1>Bài 4</h1>
+<input type="number" id="no4">
+<input type="number" id="no5">
+<button onclick="bai4()">CLick</button>
+<h4 id="add"></h4>
+<script>
+    function bai4(){
+        let a = +document.getElementById('no4').value
+        let b = +document.getElementById('no5').value
+        document.getElementById('add').innerHTML = 'Result: '+ (a+b)
+    }
+</script>
+</body>
+</html>

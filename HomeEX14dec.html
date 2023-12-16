@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="text" id="no1">
+<input type="text" id="no2">
+<br>
+<br>
+<button onclick="Add()">Addition(+)</button>
+<button onclick="Sub()">Subtraction(-)</button>
+<button onclick="Mul()">Mutiplication(*)</button>
+<button onclick="Div()">Division(/)</button>
+<h4 id="add"></h4>
+<h4 id="sub"></h4>
+<h4 id="mul"></h4>
+<h4 id="div"></h4>
+
+<script>
+    function Add(){
+        let a = +document.getElementById("no1").value;
+        let b = +document.getElementById("no2").value;
+        document.getElementById('add').innerHTML = "Result addition: " + (a+b)
+    }
+    function Sub(){
+        let a = +document.getElementById("no1").value;
+        let b = +document.getElementById("no2").value;
+        document.getElementById('sub').innerHTML = "Result subtraction: "+(a-b)
+    }function Mul(){
+        let a = +document.getElementById("no1").value;
+        let b = +document.getElementById("no2").value;
+        document.getElementById('mul').innerHTML = "Result multiplication: "+(a*b)
+    }function Div(){
+        let a = +document.getElementById("no1").value;
+        let b = +document.getElementById("no2").value;
+        document.getElementById('div').innerHTML = "Result division: "+(a/b)
+    }
+</script>
+
+
+</body>
+</html>

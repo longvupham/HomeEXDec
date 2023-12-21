@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--cách để di chuyển 1 hình ảnh-->
+<img src="https://th.bing.com/th?id=OIP.L9eg8KJ2omh0QOOY71FrIQHaNK&w=187&h=333&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="anh" style="width: 200px; top: 150px; left: 100px; position: absolute">
+<script>
+    window.addEventListener('keypress', (e)=>{
+        // alert(e.key);
+    let x = document.getElementById('anh')
+        if(e.key =='a'){
+            x.style.left = parseInt(x.style.left) -10 +'px';
+        }
+        if (e.key =='d'){
+            x.style.left = parseInt(x.style.left) +10 +'px';
+        }
+        if (e.key =='w'){
+            x.style.top = parseInt(x.style.top) -10 +'px';
+        }
+        if (e.key =='s'){
+            x.style.top = parseInt(x.style.top) +10 +'px';
+        }
+
+    })
+    // w - lên trên
+    // s - xuống dưới
+    // d - sang phải
+    // a - sang trái
+
+</script>
+</body>
+</html>

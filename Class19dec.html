@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--  in ra hello nếu a chẳn, hi nếu a lẻ-->
+  let a = +prompt("nhập số vào: ")
+  if (a%2==0) {
+    alert('hello')
+  }
+    if (a%2!=0) {
+    alert('Hi')
+  }
+
+//  in ra hello nếu a chẵn và >10, hi nếu a lẻ và <10
+  let a = +prompt("nhập số vào: ")
+if (a%2==0 && a>10) {
+  alert('hello')
+}
+if (a%2!=0 && a<10) {
+  alert('Hi')
+}
+
+</script>
+<!--
+in ra hello nếu a <5 và a>10
+-->in ra hi nếu  5<=a<=10
+<script>
+  let x = +prompt("nhập số vào x: ")
+  if (x<5 || x>10) {
+    alert('hello')
+  }
+  if (x >=5 && x<=10) {
+    alert('Hi')
+  }
+</script>
+<!--
+Phân loại học sinh
+// nhập vào điểm
+điểm <5 : Yếu
+5<= điểm <8: khá
+điểm >= 8: giỏi
+-->
+<script>
+    let y = +prompt("điểm thi: ")
+    if (y<5){
+        alert('Yếu')}
+        else if (y<8){
+            alert('khá')
+        }
+        else{alert("giỏi")}
+</script>
+</body>
+</html>

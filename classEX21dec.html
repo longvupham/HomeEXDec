@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+
+<script>
+    let a = +prompt('no1')
+    let b = +prompt('no2')
+    alert(a%b ==0)
+</script>
+<hr>
+
+<h1>Bài 2</h1>
+<script>
+    let c = +prompt('Age')
+    if (c>=15){alert('Đủ điều kiện')
+    } else {alert ('Không đủ điều kiện')}
+</script>
+<hr>
+
+<h1>Bài 3</h1>
+<script>
+    let d = +prompt('no3')
+    if (d>0){alert('Số này lớn hơn 0')}
+    if (d==0) {alert('Số này bằng 0')}
+    else {alert('Số này nhỏ hơn 0')}
+</script>
+
+<hr>
+<h1>Bài 4</h1>
+<script>
+    let e=prompt('Nhập vào số nguyên thứ nhất  :');
+    let f=prompt('Nhập vào số nguyên thứ hai :');
+    let g=prompt('Nhập vào số nguyên thứ ba :');
+    let max = e;
+    if (f > max) {max = f;}
+    if (g > max) {max = g;}
+    alert(max)
+</script>
+
+<hr>
+<h1>Bài 5</h1>
+<script>
+    let h= +prompt('Điểm các bài kiểm tra: ')
+    let i= +prompt('Điểm thi giữa kì: ')
+    let j= +prompt('Điểm thi cuối kì: ')
+let l = (h+i+j)/3
+    if (l < 5){alert('Yếu')}
+    if (l>=5 && l<7){alert('Trung bình')}
+    if (l>=7 && l<8){alert('Khá')}
+    alert('Giỏi')
+ </script>
+
+<hr>
+<h1>Bài 1 lt2</h1>
+<input type="number" id="no4">
+<button onclick="bai1()">Click</button>
+<h3 id="nhietdo"></h3>
+<script>
+    function bai1(){
+        let m = document.getElementById('no4').value
+        document.getElementById('nhietdo').innerHTML= m x 9/5
+    }
+</script>
+</body>
+</html>

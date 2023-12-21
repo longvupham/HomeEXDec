@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 1</h1>
+<script>
+    let a = +prompt('Số a: ')
+    let b = +prompt('Số b: ')
+    if (a%b ==0) {alert('chia hêt')}
+    else {alert('không chia hết')}
+</script>
+<hr>
+<h1>Bài 2</h1>
+<script>
+    let c = +prompt('số tuổi: ')
+    if (c>=15){alert('đủ tuổi')}
+    else {alert('không đủ tuổi')}
+</script>
+<hr>
+<h1>BÀi 3</h1>
+<script>
+    let d=prompt('Nhập vào số nguyên  :');
+    if(d>0){
+        alert('số nguyên đó lớn hơn 0')
+    }else{
+        alert('số nguyên đó lớn hơn 0')
+    }
+</script>
+<h1>Bài 4</h1>
+<script>
+let e=prompt('Nhập vào số nguyên thứ nhất  :');
+let f=prompt('Nhập vào số nguyên thứ hai :');
+let g=prompt('Nhập vào số nguyên thứ ba :');
+let max = e;
+if (f > max) {
+max = f;
+}
+if (g > max) {
+max = g;
+}
+alert(max)
+</script>
+<!--
+Nhập vào x
+Nam cần rán x cái bánh đa nem
+tìm số lần rán ít nhất, biết 1 lần rán tối da 9 cái
+-->
+<script>
+    let x = +prompt('số bánh đa cần rán:')
+    alert(Math.ceil(x/9))
+</script>
+<!--or-->
+
+</body>
+</html>

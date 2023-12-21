@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 2</h1>
+<button onclick="bai2()">Show</button>
+<h4 id="kq"></h4>
+<script>
+function bai2(){
+    let a = 'Kết quả là: '+ (2*(3+'5')-'2'+20/'5'+('1'+2+6))
+    document.getElementById('kq').innerHTML = (a)
+}
+</script>
+<hr>
+<hr>
+<h1>Bài 3</h1>
+<input type="text" id="hovaten">
+<button onclick="bai3()">Click</button>
+<script>
+    function bai3(){
+        let y = document.getElementById('hovaten').value
+        alert(y)
+    }
+</script>
+<hr>
+<hr>
+<h1>Bài 4</h1>
+<input type="number" id="no1">
+<input type="number" id="no2">
+<button onclick="bai4()">Compare</button>
+<h4 id="equal"></h4>
+<script>
+    function bai4(){
+        let a = document.getElementById("no1").value
+        let b = document.getElementById("no2").value
+        document.getElementById('equal').innerHTML = 
+    }
+</script>
+</body>
+</html>

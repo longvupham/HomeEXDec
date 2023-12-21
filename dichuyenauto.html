@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--cách để di chuyển 1 hình ảnh-->
+<img src="https://th.bing.com/th?id=OIP.L9eg8KJ2omh0QOOY71FrIQHaNK&w=187&h=333&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="anh" style="width: 200px; top: 150px; left: 100px; position: absolute">
+<script>
+setInterval(()=>{
+//     sau 1ms chạy 1 lần
+    let x = document.getElementById('anh')
+    x.style.left = parseInt(x.style.left) +1 +'px';
+    if (parseInt(x.style.left)>= window.innerWidth){
+        x.style.left = 0 + 'px';
+    }
+},1)
+// window.innerwidth: chiều ngang màn hình
+// khi ảnh chạm cạnh phải màn hình thì ngay lập tức, quay lại cạnh trái đi tiếp
+
+// nếu muốn đụng cạnh phải rồi ảnh di chuyển ngược lại thì dùng code như sau:
+let speed = 1;
+setInterval(()=>{
+//     sau 1ms chạy 1 lần
+    let x = document.getElementById('anh')
+    x.style.left = parseInt(x.style.left) +speed +'px';
+    if (parseInt(x.style.left)>= window.innerWidth){
+        speed= -speed;
+    }
+},1)
+
+// nếu muốn đập cạnh trái rồi về phải rồi đập cạnh phải rồi về trái thì dùng như sau
+let speed = 1;
+setInterval(()=>{
+//     sau 1ms chạy 1 lần
+    let x = document.getElementById('anh')
+    x.style.left = parseInt(x.style.left) +speed +'px';
+    if (parseInt(x.style.left)>= window.innerWidth||parseInt(x.style.left)<=0){
+        speed= -speed;
+    }
+},1)
+
+// cho ảnh đi chéo rồi va chạm cạnh trên cạnh dưới
+let speedX = 5;
+let speedY = 5;
+
+setInterval(()=>{
+//     sau 5ms chạy 1 lần
+    let x = document.getElementById('anh')
+    x.style.left = parseInt(x.style.left) +speedX +'px';
+    x.style.top = parseInt(x.style.top) +speedY +'px';
+
+    if (parseInt(x.style.left)>= window.innerWidth||parseInt(x.style.left)<=0){
+        speedX= -speedX;
+    }
+    if (parseInt(x.style.top)>= window.innerHeight||parseInt(x.style.left)<=0){
+        speedY= -speedY;
+        }
+    },5)
+</script>
+</body>
+</html>
